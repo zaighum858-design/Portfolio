@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --accent: #ff6500;
+    --accent-hover: #ff7d20;
+    --accent-soft: rgba(255, 101, 0, 0.1);
+    --bg-page: #080706;
+    --bg-surface: #100e0c;
+    --bg-card: #13110f;
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(255, 101, 0, 0.4);
+    --text-primary: #ffffff;
+    --text-secondary: #9ca3af;
+    --text-muted: #6b7280;
+    --btn-text: #080706;
+  }
+
+  [data-theme="cyber-green"] {
+    --accent: #10b981;
+    --accent-hover: #34d399;
+    --accent-soft: rgba(16, 185, 129, 0.1);
+    --bg-page: #060a08;
+    --bg-surface: #0c1410;
+    --bg-card: #0e1712;
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(16, 185, 129, 0.4);
+    --text-primary: #ffffff;
+    --text-secondary: #9ca3af;
+    --text-muted: #6b7280;
+    --btn-text: #060a08;
+  }
+
+  [data-theme="deep-purple"] {
+    --accent: #a855f7;
+    --accent-hover: #c084fc;
+    --accent-soft: rgba(168, 85, 247, 0.1);
+    --bg-page: #08060d;
+    --bg-surface: #120e1c;
+    --bg-card: #151020;
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(168, 85, 247, 0.4);
+    --text-primary: #ffffff;
+    --text-secondary: #9ca3af;
+    --text-muted: #6b7280;
+    --btn-text: #ffffff;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    line-height: 1.6;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  .font-serif-display {
+    font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+  }
+
+  .font-mono-code {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Subtle organic grain overlay like human-designed editorial portfolios */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-page);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
