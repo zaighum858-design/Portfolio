@@ -8,7 +8,7 @@ export const DEVELOPER_INFO = {
   location: 'Available Worldwide / Remote',
   status: 'AVAILABLE FOR PROJECTS',
   bio: `I'm Zaigham, a web developer focused on mastering modern web development and crafting polished, high-performance websites. I combine clean semantic structure with thoughtful UI interactions to deliver web experiences that feel effortless, responsive, and visually striking.`,
-  avatarImage: '/src/assets/images/portrait_zaigham_simple_1791386290886.jpg',
+  avatarImage: '/images/portrait_zaigham_simple_1791386290886.jpg',
   stats: [
     { label: 'Clean Code', value: '100%', detail: 'Semantic & accessible HTML/CSS' },
     { label: 'Responsive', value: 'Multi-Device', detail: 'Mobile, tablet, 4K desktop' },
@@ -32,7 +32,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     tag: 'responsive',
     description: 'A responsive website recreated to practice real-world HTML and CSS layouts with pixel precision.',
     longDescription: 'A complete recreation and modernization of the renowned UltraEdit text editor website. Focused on clean multi-column layouts, sticky navigations, interactive feature grids, and full cross-browser responsiveness across all screen sizes.',
-    image: '/src/assets/images/portfolio_ultraedit_project_1791385657483.jpg',
+    image: '/images/portfolio_ultraedit_project_1791385657483.jpg',
     techStack: ['HTML5', 'CSS3', 'Modern Flexbox', 'CSS Grid', 'Vanilla JS'],
     features: [
       'Pixel-perfect responsive hero layout with dual call-to-actions',
@@ -62,7 +62,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     tag: 'ui-ux',
     description: 'A modern portfolio website focused on animations, responsive design and tactile UI interactions.',
     longDescription: 'Zaigham\'s signature portfolio environment designed with an obsidian dark theme, glowing ambient accents, interactive code terminals, and smooth micro-interactions that communicate craft and technical skill.',
-    image: '/src/assets/images/avatar_zaigham_developer_1791385704382.jpg',
+    image: '/images/avatar_zaigham_developer_1791385704382.jpg',
     techStack: ['React', 'TypeScript', 'Tailwind CSS', 'CSS Keyframes', 'Lucide Icons'],
     features: [
       'Multi-color theme engine (Flame Orange, Amber, Emerald, Cyan, Rose)',
@@ -87,7 +87,7 @@ useEffect(() => {
     tag: 'javascript',
     description: 'An interactive web project built while developing JavaScript skills and particle physics logic.',
     longDescription: 'An exploratory canvas lab exploring math-driven animations, mouse-follower particle trails, dynamic coordinate calculations, and event-driven interactive widgets in pure JavaScript.',
-    image: '/src/assets/images/portfolio_interactive_project_1791385691234.jpg',
+    image: '/images/portfolio_interactive_project_1791385691234.jpg',
     techStack: ['JavaScript (ES6+)', 'HTML5 Canvas', 'RequestAnimationFrame', 'Physics Vector Math'],
     features: [
       'Real-time mouse collision & particle spring physics',
@@ -116,7 +116,7 @@ function updateParticle(p, mouseX, mouseY) {
     tag: 'landing',
     description: 'A clean landing page designed with modern spacing, typography and visual effects.',
     longDescription: 'A sleek, conversion-focused product landing page designed to communicate value clearly in the first 5 seconds. Featuring balanced typography, high-impact feature callouts, and smooth scroll transitions.',
-    image: '/src/assets/images/portfolio_landing_project_1791385680067.jpg',
+    image: '/images/portfolio_landing_project_1791385680067.jpg',
     techStack: ['HTML5', 'Modern CSS', 'Tailwind CSS', 'Intersection Observer'],
     features: [
       'Visual hierarchy driven by balanced typography math and spacing',
@@ -143,7 +143,7 @@ const observer = new IntersectionObserver((entries) => {
     tag: 'ui-ux',
     description: 'A dashboard interface created to practice layouts, components and responsive UI.',
     longDescription: 'A high-contrast dark dashboard interface showcasing data tables, metric trend widgets, filterable card matrices, and responsive sidebar navigation with full drawer toggle states.',
-    image: '/src/assets/images/portfolio_dashboard_project_1791385668350.jpg',
+    image: '/images/portfolio_dashboard_project_1791385668350.jpg',
     techStack: ['React', 'TypeScript', 'CSS Grid', 'SVG Charts', 'Flexbox'],
     features: [
       'Collapsible navigation rail and responsive off-canvas drawer',
@@ -167,7 +167,7 @@ const observer = new IntersectionObserver((entries) => {
     tag: 'javascript',
     description: 'New creative projects and open-source experiments added as development skills continue to grow.',
     longDescription: 'An active incubator of web development experiments: explore full-stack integration prototypes, micro-interactions, responsive prototypes, and interactive mini-games created to test new CSS and JavaScript techniques.',
-    image: '/src/assets/images/portfolio_interactive_project_1791385691234.jpg',
+    image: '/images/portfolio_interactive_project_1791385691234.jpg',
     techStack: ['React 19', 'Next-Gen CSS', 'Web Animations API', 'TypeScript'],
     features: [
       'Prototyping grounds for upcoming client and open-source projects',
@@ -192,7 +192,7 @@ element.animate([
     tag: 'ui-ux',
     description: 'A dark-mode cryptocurrency analytics dashboard with real-time liquidity pools and interactive token charts.',
     longDescription: 'High-performance decentralized finance interface featuring reactive token orderbooks, glassmorphic trade slips, and custom SVG price visualizers calibrated for low latency and high contrast.',
-    image: '/src/assets/images/portfolio_crypto_project_1791387255249.jpg',
+    image: '/images/portfolio_crypto_project_1791387255249.jpg',
     techStack: ['React', 'TypeScript', 'Tailwind CSS', 'SVG Visualizers'],
     features: [
       'Reactive staking calculator with interactive APR slider',
@@ -217,7 +217,7 @@ const calculateYield = (stakeAmount: number, lockDays: number) => {
     tag: 'landing',
     description: 'An editorial portfolio website designed for a creative agency, featuring brutalist typography and fluid page transitions.',
     longDescription: 'High-impact editorial website crafted with oversized display type, measured whitespace rhythm, and hardware-accelerated cursor interactions designed to showcase high-retention video showreels and brand identities.',
-    image: '/src/assets/images/portfolio_creative_studio_1791387267793.jpg',
+    image: '/images/portfolio_creative_studio_1791387267793.jpg',
     techStack: ['HTML5', 'Modern CSS', 'Intersection Observer', 'JavaScript'],
     features: [
       'Fluid typographic clamp scaling across all screen sizes',
@@ -242,7 +242,7 @@ const calculateYield = (stakeAmount: number, lockDays: number) => {
     tag: 'responsive',
     description: 'A luxury audio tech ecommerce experience showcasing studio headphones with acoustic spectrum visualizers.',
     longDescription: 'A premium product showcase designed for high-fidelity audio equipment. Includes interactive frequency response curves, finish configurators, and streamlined checkout drawers built for responsive touch devices.',
-    image: '/src/assets/images/portfolio_audiophile_ecommerce_1791387281702.jpg',
+    image: '/images/portfolio_audiophile_ecommerce_1791387281702.jpg',
     techStack: ['React', 'Tailwind CSS', 'CSS Keyframes', 'TypeScript'],
     features: [
       'Interactive 360-degree color finish picker',
